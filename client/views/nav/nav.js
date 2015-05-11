@@ -1,7 +1,22 @@
 'use strict';
+$(document).ready(function(){
+  $('.materialboxed').materialbox();
+  $('.button-collapse').sideNav();
+});
+// $('.collapsible').collapsible({
+//   //  accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+// //  });
+// });
 
-angular.module('poseidon')
+angular.module('coyler')
 .controller('NavCtrl', function($rootScope, $scope, $state, $firebaseObject, $http, User){
+  // $(document).ready(function(){
+    angular.element('.materialboxed').materialbox();
+    $('.button-collapse').sideNav();
+    angular.element('.collapsible').collapsible({
+      //  accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+    //  });
+  });
   function goHome(){
     $state.go('home');
   }

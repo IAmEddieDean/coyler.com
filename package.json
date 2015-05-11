@@ -1,7 +1,7 @@
 {
-  "name": "poseidon",
+  "name": "coyler",
   "version": "0.0.1",
-  "homepage": "https://github.com/coding-house-apr2015/poseidon",
+  "homepage": "https://github.com/coding-house-apr2015/coyler",
   "author": "Chyld Medford <chyld.medford@gmail.com>",
   "license": "BSD",
   "devDependencies": {
