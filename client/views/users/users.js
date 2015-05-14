@@ -19,6 +19,9 @@ angular.module('coyler')
       });
     }else{
       User.login(user)
+      .then(function(){
+        $state.go('home');
+      })
       .catch(function(){
         $window.swal({title: 'Login Error', text: 'There was a problem with your login. Please try again.', type: 'error'});
       });

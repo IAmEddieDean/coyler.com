@@ -7,17 +7,14 @@
   hr
   .row
     .col.s12.m12.l12.portfolio-holder
-      //- img.materialboxed(src='../assets/gitblame.jpg' width='400')
-      //- .card
-      //-   .card-content.white-text
-      //-     p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
-      
-      img.materialboxed(src='../../assets/gitblame.jpg')
-      img.materialboxed(src='../../assets/gitblame.jpg')
-      img.materialboxed(src='../../assets/gitblame.jpg')
-      img.materialboxed(src='../../assets/gitblame.jpg')
-      img.materialboxed(src='../../assets/gitblame.jpg')
-      img.materialboxed(src='../../assets/gitblame.jpg')
+      img.materialboxed.port(src='../../assets/roadtrip.png')
+      img.materialboxed.port(src='../../assets/gitblame1.jpg')
+      img.materialboxed.port(src='../../assets/address.png')
+  .row
+    .col.s12.m12.l12.portfolio-holder
+      img.materialboxed.port(src='../../assets/checkers.png')
+      img.materialboxed.port(src='../../assets/calc.png')
+      img.materialboxed.port(src='../../assets/hanoi.jpg')
 .container.about
   h5 about me
   h6 let me introduce my self
@@ -29,9 +26,9 @@
     .col.s12
       h6 Story
       p
-        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        | I've always enjoyed building things. I started with Estes rockets and model planes as a kid, but since then I've moved on to furniture and motorcycle parts. It felt like a natural progression to move on to coding, where I get to build things everyday.
       p
-        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        | I would love to build things for you, so if you need something built, get in touch with me.
     //- .col.s12.m6.l6
     //-   h6 Profile
     //-   .card.blue-grey.darken-1
@@ -47,30 +44,33 @@
   h6 i'll be available for hire june 10, 2015
   hr
   .row
-    .col.s12.m6.l6
-      .row
-        form.col.s12
-          .row
-            .input-field.col.s6
-              input#first_name.validate(type='text')
-              label(for='first_name') First Name
-            .input-field.col.s6
-              input#last_name.validate(type='text')
-              label(for='last_name') Last Name
-          .row
-            .input-field.col.s12
-              input#email.validate(type='email')
-              label(for='email') E-Mail
-          textarea.materialize-textarea(placeholder='Your Message', required='')
-          button.btn.waves-effect.waves-light(type='submit', name='action')
-            | Submit
-            i.mdi-content-send.right
-    .col.s12.m6.l6.contact-holder
-      h6.mdi-action-home Address
-      p 902 Quail Forest Cove - Austin, Texas 78758
-      h6.mdi-hardware-phone-android Phone Number
-      p 512 • 587 • 5236
-      h6.mdi-action-open-in-browser Social
-      a(target='_blank' href='https://twitter.com/chrisoyler'): i.fa.fa-2x.fa-twitter&nbsp&nbsp&nbsp
-      a(target='_blank' href='https://www.linkedin.com/in/christopheroyler'): i.fa.fa-2x.fa-linkedin&nbsp&nbsp&nbsp
-      a(target='_blank' href='https://github.com/IAmEddieDean'): i.fa.fa-2x.fa-github
+    //- .col.s12.m6.l6
+    //-   .row
+    //-     form.col.s12
+    //-       .row
+    //-         .input-field.col.s6
+    //-           input#first_name.validate(type='text')
+    //-           label(for='first_name') First Name
+    //-         .input-field.col.s6
+    //-           input#last_name.validate(type='text')
+    //-           label(for='last_name') Last Name
+    //-       .row
+    //-         .input-field.col.s12
+    //-           input#email.validate(type='email')
+    //-           label(for='email') E-Mail
+    //-       textarea.materialize-textarea(placeholder='Your Message', required='')
+    //-       button.btn.waves-effect.waves-light(type='submit', name='action')
+    //-         | Submit
+    //-         i.mdi-content-send.right
+    .col.s12.m8.offset-m2.l6.offset-l3.contact-holder
+      .card.grey
+        .card-content
+          h6.mdi-action-home Address
+          p 902 Quail Forest Cove - Austin, Texas 78758
+          h6.mdi-hardware-phone-android Phone Number
+          p: a(href='1-512-587-5236')#phone 512 • 587 • 5236
+          h6.mdi-action-open-in-browser Social
+          a(target='_blank' href='https://twitter.com/chrisoyler'): i.fa.fa-2x.fa-twitter&nbsp&nbsp&nbsp
+          a(target='_blank' href='https://www.linkedin.com/in/christopheroyler'): i.fa.fa-2x.fa-linkedin&nbsp&nbsp&nbsp
+          a(target='_blank' href='https://github.com/IAmEddieDean'): i.fa.fa-2x.fa-github&nbsp&nbsp&nbsp
+          a(href='mailto:christopher.oyler@gmail.com?Subject=Hi,%20how%20you?'): i.fa.fa-2x.fa-envelope
