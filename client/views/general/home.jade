@@ -1,20 +1,24 @@
 .intro.z-depth-1
-  h1.grey-text.text-lighten-5 CHRISTOPHER OYLER
-  h5.grey.lighten-4.grey-text.text-darken-1 full stack web developer
+  h3.grey-text.text-lighten-5 CHRISTOPHER OYLER
+  h5.grey.lighten-4.grey-text.text-darken-1.flow-text: a.modal-trigger(href='#modal1') full stack web developer
+.modal#modal1
+  .modal-content
+    img.responsive-img#cv(src='../../assets/ChristopherOyler-CV.png')
+    
 .container.portfolio
   h5 portfolio
   h6 MY LATEST PROJECTS
   hr
   .row
     .col.s12.m12.l12.portfolio-holder
+      img.materialboxed.port(src='../../assets/auctionsmith.jpg')
       img.materialboxed.port(src='../../assets/roadtrip.png')
-      img.materialboxed.port(src='../../assets/gitblame1.jpg')
       img.materialboxed.port(src='../../assets/address.png')
   .row
     .col.s12.m12.l12.portfolio-holder
       img.materialboxed.port(src='../../assets/checkers.png')
-      img.materialboxed.port(src='../../assets/calc.png')
       img.materialboxed.port(src='../../assets/hanoi.jpg')
+      img.materialboxed.port(src='../../assets/gitblame1.jpg')
 .container.about
   h5 about me
   h6 let me introduce my self
@@ -25,9 +29,9 @@
   .row
     .col.s12
       h6 Story
-      p
+      p.flow-text
         | I've always enjoyed building things. I started with Estes rockets and model planes as a kid, but since then I've moved on to furniture and motorcycle parts. It felt like a natural progression to move on to coding, where I get to build things everyday.
-      p
+      p.flow-text
         | I would love to build things for you, so if you need something built, get in touch with me.
     //- .col.s12.m6.l6
     //-   h6 Profile
@@ -64,13 +68,13 @@
     //-         i.mdi-content-send.right
     .col.s12.m8.offset-m2.l6.offset-l3.contact-holder
       .card.grey
-        .card-content
+        .card-content.center-align
           h6.mdi-action-home Address
-          p 902 Quail Forest Cove - Austin, Texas 78758
+          p 46684 Windmill Drive - Fremont, California 94539
           h6.mdi-hardware-phone-android Phone Number
           p: a(href='1-512-587-5236')#phone 512 • 587 • 5236
           h6.mdi-action-open-in-browser Social
-          a(target='_blank' href='https://twitter.com/chrisoyler'): i.fa.fa-2x.fa-twitter&nbsp&nbsp&nbsp
-          a(target='_blank' href='https://www.linkedin.com/in/christopheroyler'): i.fa.fa-2x.fa-linkedin&nbsp&nbsp&nbsp
-          a(target='_blank' href='https://github.com/IAmEddieDean'): i.fa.fa-2x.fa-github&nbsp&nbsp&nbsp
-          a(href='mailto:christopher.oyler@gmail.com?Subject=Hi,%20how%20you?'): i.fa.fa-2x.fa-envelope
+          a(target='_blank' href='https://twitter.com/chrisoyler'): i.center-align.fa.fa-2x.fa-twitter&nbsp&nbsp&nbsp
+          a(target='_blank' href='https://www.linkedin.com/in/christopheroyler'): i.center-align.fa.fa-2x.fa-linkedin&nbsp&nbsp&nbsp
+          a(target='_blank' href='https://github.com/IAmEddieDean'): i.center-align.fa.fa-2x.fa-github&nbsp&nbsp&nbsp
+          a(href='mailto:christopher.oyler@gmail.com?Subject=Hi,%20how%20you?'): i.center-align.fa.fa-2x.fa-envelope
