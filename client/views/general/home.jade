@@ -3,77 +3,69 @@
   h5.grey.lighten-4.grey-text.text-darken-1.flow-text: a.modal-trigger(href='#modal1') full stack web developer
 .modal#modal1
   .modal-content
-    img.responsive-img#cv(src='../../assets/ChristopherOyler-CV.png')
+    img.responsive-img#cv(src='../../assets/ChristopherOyler-CV.jpeg')
     
 .container.portfolio
-  h5 portfolio
-  h6 MY LATEST PROJECTS
-  hr
+  h5.h5mix portfolio
+  h6.h6mix MY LATEST PROJECTS
+  hr.hrmix
   .row
-    .col.s12.m12.l12.portfolio-holder
-      img.materialboxed.port(src='../../assets/auctionsmith.jpg')
-      img.materialboxed.port(src='../../assets/roadtrip.png')
-      img.materialboxed.port(src='../../assets/address.png')
+    .col.s12
+      a.modal-trigger(href='port1'): img.responsive-img(src='../../assets/auctionsmith.jpg')
+    .col.s12.l4
+      a.modal-trigger(href='port2'): img.responsive-img(src='../../assets/roadtrip.png')
+    .col.s12.l4
+      a.modal-trigger(href='port3'): img.responsive-img(src='../../assets/address.png')
   .row
+    .col.s12.l4
+      a.modal-trigger(href='port4'): img.responsive-img(src='../../assets/checkers.png')
+    .col.s12.l4
+      a.modal-trigger(href='port5'): img.responsive-img(src='../../assets/hanoi.jpg')
+    .col.s12.l4
+      a.modal-trigger(href='port6'): img.responsive-img(src='../../assets/gitblame1.jpg')
+.modal#port1
+.modal#port2
+.modal#port3
+.modal#port4
+.modal#port5
+.modal#port6
+        
+    //- .col.s12.m12.l12.portfolio-holder
+    //-   img.materialboxed.port(src='../../assets/auctionsmith.jpg')
+    //-   img.materialboxed.port(src='../../assets/roadtrip.png')
+    //-   img.materialboxed.port(src='../../assets/address.png')
+  //- .row
     .col.s12.m12.l12.portfolio-holder
       img.materialboxed.port(src='../../assets/checkers.png')
       img.materialboxed.port(src='../../assets/hanoi.jpg')
       img.materialboxed.port(src='../../assets/gitblame1.jpg')
 .container.about
-  h5 about me
-  h6 let me introduce my self
-  hr
+  h5.h5mix about me
+  //- h6.h6mix let me introduce my self
+  hr.hrmix
   .row
     .col.s12.center-align
       img.responsive-img#me(src='../../assets/me.jpg')
+  //- hr
   .row
     .col.s12
-      h6 Story
+      //- h5.h5mix Story
       p.flow-text
         | I've always enjoyed building things. I started with Estes rockets and model planes as a kid, but since then I've moved on to furniture and motorcycle parts. It felt like a natural progression to move on to coding, where I get to build things everyday.
       p.flow-text
         | I would love to build things for you, so if you need something built, get in touch with me.
-    //- .col.s12.m6.l6
-    //-   h6 Profile
-    //-   .card.blue-grey.darken-1
-    //-     .card-content.white-text
-    //-       img(src='../assets/me.jpg', width='100', height='100')
-    //-       p
-    //-         | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
-    //-     .card-action
-    //-       a(href='#') Link
-    //-       a(href='#') Link
 .container.contact
-  h5 Ready to work
-  h6 i'll be available for hire june 10, 2015
-  hr
+  h5.h5mix Busy Working At ZURB
+  h6.h6mix But I'm always interested in new opportunities
+  hr.hrmix
   .row
-    //- .col.s12.m6.l6
-    //-   .row
-    //-     form.col.s12
-    //-       .row
-    //-         .input-field.col.s6
-    //-           input#first_name.validate(type='text')
-    //-           label(for='first_name') First Name
-    //-         .input-field.col.s6
-    //-           input#last_name.validate(type='text')
-    //-           label(for='last_name') Last Name
-    //-       .row
-    //-         .input-field.col.s12
-    //-           input#email.validate(type='email')
-    //-           label(for='email') E-Mail
-    //-       textarea.materialize-textarea(placeholder='Your Message', required='')
-    //-       button.btn.waves-effect.waves-light(type='submit', name='action')
-    //-         | Submit
-    //-         i.mdi-content-send.right
     .col.s12.m8.offset-m2.l6.offset-l3.contact-holder
       .card.grey
         .card-content.center-align
-          h6.mdi-action-home Address
-          p 46684 Windmill Drive - Fremont, California 94539
-          h6.mdi-hardware-phone-android Phone Number
-          p: a(href='1-512-587-5236')#phone 512 • 587 • 5236
-          h6.mdi-action-open-in-browser Social
+          span.mdi-action-home &nbsp; San Francisco, California
+          hr.cardhr
+          p.mdi-hardware-phone-android: a(href='1-512-587-5236')#phone &nbsp; 512 • 587 • 5236
+          hr.cardhr
           a(target='_blank' href='https://twitter.com/chrisoyler'): i.center-align.fa.fa-2x.fa-twitter&nbsp&nbsp&nbsp
           a(target='_blank' href='https://www.linkedin.com/in/christopheroyler'): i.center-align.fa.fa-2x.fa-linkedin&nbsp&nbsp&nbsp
           a(target='_blank' href='https://github.com/IAmEddieDean'): i.center-align.fa.fa-2x.fa-github&nbsp&nbsp&nbsp

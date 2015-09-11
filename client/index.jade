@@ -1,5 +1,6 @@
 doctype html
-html(lang='en', ng-app='coyler')
+//- html(lang='en', ng-app='coyler')
+html(lang='en')
   head
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
@@ -8,7 +9,6 @@ html(lang='en', ng-app='coyler')
     link(rel='icon', type='image/png', src='/assets/favicon-32x32.png', sizes='32x32')
     link(rel='icon', type='image/png', src='/assets/favicon-16x16.png', sizes='16x16')
     link(href='vendor/materialize/dist/css/materialize.min.css', type='text/css', rel='stylesheet', media='screen,projection')
-    link(rel='stylesheet', href='/vendor/sweetalert/lib/sweet-alert.css')
     link(rel='stylesheet', href='/vendor/font-awesome/css/font-awesome.min.css')
     link(rel='stylesheet', href=isProd ? '/index.min.css' : '/index.css')
     link(rel='shortcut icon', href='/favicon.ico')
@@ -17,14 +17,14 @@ html(lang='en', ng-app='coyler')
     .container-fluid
       .row
         .col-xs-12
-          div(ui-view)
+          include views/general/home
+          //- div(ui-view)
     include views/nav/footer
 
     script(src='/vendor/jquery/dist/jquery.min.js')
-    script(src='/vendor/angular/angular.min.js')
+    //- script(src='/vendor/angular/angular.min.js')
     script(src='/vendor/materialize/dist/js/materialize.min.js')
-    script(src='/vendor/firebase/firebase.js')
-    script(src='/vendor/sweetalert/lib/sweet-alert.min.js')
-    script(src='/vendor/angularfire/dist/angularfire.min.js')
-    script(src='/vendor/angular-ui-router/release/angular-ui-router.min.js')
+    //- script(src='/vendor/firebase/firebase.js')
+    //- script(src='/vendor/angularfire/dist/angularfire.min.js')
+    //- script(src='/vendor/angular-ui-router/release/angular-ui-router.min.js')
     script(src=isProd ? '/index.min.js' : '/index.js')
