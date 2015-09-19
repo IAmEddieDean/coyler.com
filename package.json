@@ -1,8 +1,8 @@
 {
-  "name": "coyler",
-  "version": "0.0.1",
-  "homepage": "https://github.com/coding-house-apr2015/coyler",
-  "author": "Chyld Medford <chyld.medford@gmail.com>",
+  "name": "ChrisOyler",
+  "version": "0.0.2",
+  "homepage": "https://github.com/IAmEddieDean",
+  "author": "Christopher Oyler <christopher.oyler@gmail.com>",
   "license": "BSD",
   "devDependencies": {
     "bower": "^1.4.1",

@@ -1,32 +1,17 @@
 .container.contact
-  h5 Ready to work
-  h6 i'll be available for hire june 10, 2015
-  hr
+  h5.h5mix Busy Working At ZURB
+  h6.h6mix But I'm always interested in new opportunities
+  hr.hrmix
   .row
-    .col.s12.m6.l6
-      .row
-        form.col.s12
-          .row
-            .input-field.col.s6
-              input#first_name.validate(type='text')
-              label(for='first_name') First Name
-            .input-field.col.s6
-              input#last_name.validate(type='text')
-              label(for='last_name') Last Name
-          .row
-            .input-field.col.s12
-              input#email.validate(type='email')
-              label(for='email') E-Mail
-          textarea.materialize-textarea(placeholder='Your Message', required='')
-          button.btn.waves-effect.waves-light(type='submit', name='action')
-            | Submit
-            i.mdi-content-send.right
-    .col.s12.m6.l6.contact-holder
-      h6.mdi-action-home Address
-      p 902 Quail Forest Cove - Austin, Texas 78758
-      h6.mdi-hardware-phone-android Phone Number
-      p 512 • 587 • 5236
-      h6.mdi-action-open-in-browser Social
-      a(target='_blank' href='https://twitter.com/chrisoyler'): i.fa.fa-2x.fa-twitter&nbsp&nbsp&nbsp
-      a(target='_blank' href='https://www.linkedin.com/in/christopheroyler'): i.fa.fa-2x.fa-linkedin&nbsp&nbsp&nbsp
-      a(target='_blank' href='https://github.com/IAmEddieDean'): i.fa.fa-2x.fa-github
+    .col.s12.m8.offset-m2.l6.offset-l3.contact-holder
+      .card.grey
+        .card-content.center-align
+          span San Francisco, California
+          hr.cardhr
+          p: a(href='1-512-587-5236')#phone 512 • 587 • 5236
+          hr.cardhr
+          a(target='_blank' href='https://twitter.com/chrisoyler'): i.center-align.fa.fa-2x.fa-twitter.social
+          a(target='_blank' href='https://www.linkedin.com/in/christopheroyler'): i.center-align.fa.fa-2x.fa-linkedin.social
+          a(target='_blank' href='https://github.com/IAmEddieDean'): i.center-align.fa.fa-2x.fa-github.social
+          a(href='mailto:christopher.oyler@gmail.com?Subject=Hi,%20how%20are%20you?'): i.center-align.fa.fa-2x.fa-envelope.email
+          //- a(href='mailto:christopher.oyler@gmail.com?Subject=Hi,%20how%20you?'): i.center-align.fa.fa-2x.fa-envelope

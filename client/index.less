@@ -7,14 +7,24 @@ body, html, .nav{
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
 }
+.modal{
+  max-height: 98%;
+  top: 1% !important;
+  .modal-content{
+    padding: .5em;
+  }
+}
 .nav-wrapper a{
   color: #292c33 !important;
 }
 .brand-logo{
-  
+  margin-left: 1em;
 }
 .modal-content{
-  max-height: 100%;
+  height: 100%;
+}
+.git{
+  margin-right: 1em;
 }
 #cv{
   width: 100%;
@@ -70,20 +80,20 @@ body, html, .nav{
   }
 }
 
-.portfolio{
-  & .col{
-	margin-bottom: 1.5em;
-  }
-  & .portfolio-holder{
-  	clear: both;
-  	text-align: center;
-  }
-  & img{
-    width: 33%;
-    display: inline-block;
-    float: left;
-  }
-}
+// .portfolio{
+//   & .col{
+// 	margin-bottom: 1.5em;
+//   }
+//   & .portfolio-holder{
+//   	clear: both;
+//   	text-align: center;
+//   }
+//   & img{
+//     width: 33%;
+//     display: inline-block;
+//     float: left;
+//   }
+// }
 .contact{
   & .card{
     background-color: #292c33;
@@ -99,27 +109,33 @@ body, html, .nav{
       text-align: left;
     }
   }
+  & .social{
+    padding-right: 1em;
+  }
+  .social:hover, .email:hover{
+    opacity: .8;
+  }
+  .fa-twitter{
+    color: #55ACEE;
+  }
+  .fa-linkedin{
+    color: #1883BB;
+  }
+  .fa-github{
+    color: #333333;
+  }
+  .fa-envelope{
+    color: #141414;
+  }
+  #phone{
+    color: #141414;
+    &:hover{
+      color: white;
+    }
+  }
 }
 #me{
   max-width: 18.75em !important;
-}
-.fa-twitter{
-  color: #55ACEE;
-}
-.fa-linkedin{
-  color: #1883BB;
-}
-.fa-github{
-  color: #333333;
-}
-.fa-envelope{
-  color: #141414;
-}
-#phone{
-  color: #141414;
-  &:hover{
-    color: white;
-  }
 }
 footer{
 	padding-top: 0;

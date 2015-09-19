@@ -1,30 +1,27 @@
 doctype html
-//- html(lang='en', ng-app='coyler')
 html(lang='en')
   head
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1')
-    title coyler
+    title Chris Oyler | Web Dev
     link(rel='icon', type='image/png', src='/assets/favicon-32x32.png', sizes='32x32')
     link(rel='icon', type='image/png', src='/assets/favicon-16x16.png', sizes='16x16')
     link(href='vendor/materialize/dist/css/materialize.min.css', type='text/css', rel='stylesheet', media='screen,projection')
-    link(rel='stylesheet', href='/vendor/font-awesome/css/font-awesome.min.css')
+    link(href='vendor/font-awesome/css/font-awesome.min.css', type='text/css', rel='stylesheet', media='screen,projection')
     link(rel='stylesheet', href=isProd ? '/index.min.css' : '/index.css')
     link(rel='shortcut icon', href='/favicon.ico')
   body
     include views/nav/nav
     .container-fluid
       .row
-        .col-xs-12
-          include views/general/home
-          //- div(ui-view)
+        //- .col.s12
+        include views/general/intro
+        include views/general/portfolio
+        include views/general/about
+        include views/general/contact
     include views/nav/footer
 
     script(src='/vendor/jquery/dist/jquery.min.js')
-    //- script(src='/vendor/angular/angular.min.js')
     script(src='/vendor/materialize/dist/js/materialize.min.js')
-    //- script(src='/vendor/firebase/firebase.js')
-    //- script(src='/vendor/angularfire/dist/angularfire.min.js')
-    //- script(src='/vendor/angular-ui-router/release/angular-ui-router.min.js')
     script(src=isProd ? '/index.min.js' : '/index.js')
